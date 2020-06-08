@@ -1,0 +1,63 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "barry@email.com",
+            "username": "barry",
+            "password": "abc123"
+        },
+        {
+            "id": 2,
+            "email": "pat@email.com",
+            "username": "pat",
+            "password": "abc123"
+        },
+        {
+            "id": 3,
+            "email": "devin@email.com",
+            "username": "devin",
+            "password": "abc123"
+        }
+    ],
+    "articles": [
+        {
+            "id": 1,
+            "userId": 2,
+            "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
+            "title": "Wormholes Allow Information to Escape Black Holes",
+            "synopsis": "Check out this recent discovery about workholes",
+            "date": "2020/06/08"
+        }
+    ],
+
+    "tasks": [
+        {
+            "id": 1,
+            "userId": 3,
+            "taskName": "Take out garbage",
+            "complete": false,
+            "completedDate": ""
+            
+        }
+    ],
+
+"events": [
+    {
+"id": 1,
+"name": "Pats Birthday",
+"date": "2020/07/01",
+"location": "Pats Cribbb",
+"userId": 2,
+"description": "Come one come all, open bar, lets get weird."
+    }
+],
+
+"messages": [
+    {
+        "id": 1,
+        "message": "come over, trick.",
+        "userId": 3,
+        "time": "2020/06/08 at 10:39:05"
+    }
+]
+}
