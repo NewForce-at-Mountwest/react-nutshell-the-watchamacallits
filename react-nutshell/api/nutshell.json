@@ -1,63 +1,80 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "email": "barry@email.com",
-            "username": "barry",
-            "password": "abc123"
-        },
-        {
-            "id": 2,
-            "email": "pat@email.com",
-            "username": "pat",
-            "password": "abc123"
-        },
-        {
-            "id": 3,
-            "email": "devin@email.com",
-            "username": "devin",
-            "password": "abc123"
-        }
-    ],
-    "articles": [
-        {
-            "id": 1,
-            "userId": 2,
-            "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
-            "title": "Wormholes Allow Information to Escape Black Holes",
-            "synopsis": "Check out this recent discovery about workholes",
-            "date": "2020/06/08"
-        }
-    ],
-
-    "tasks": [
-        {
-            "id": 1,
-            "userId": 3,
-            "taskName": "Take out garbage",
-            "complete": false,
-            "completedDate": ""
-            
-        }
-    ],
-
-"events": [
+  "users": [
     {
-"id": 1,
-"name": "Pats Birthday",
-"date": "2020/07/01",
-"location": "Pats Cribbb",
-"userId": 2,
-"description": "Come one come all, open bar, lets get weird."
-    }
-],
-
-"messages": [
+      "id": 1,
+      "email": "barry@email.com",
+      "username": "barry",
+      "password": "abc123"
+    },
     {
-        "id": 1,
-        "message": "come over, trick.",
-        "userId": 3,
-        "time": "2020/06/08 at 10:39:05"
+      "id": 2,
+      "email": "pat@email.com",
+      "username": "pat",
+      "password": "abc123"
+    },
+    {
+      "id": 3,
+      "email": "devin@email.com",
+      "username": "devin",
+      "password": "abc123"
     }
-]
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "userId": 2,
+      "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
+      "title": "Wormholes Allow Information to Escape Black Holes",
+      "synopsis": "Check out this recent discovery about workholes",
+      "date": "2020-06-08T19:04:41.614Z"
+    },
+    {
+      "title": "Spanish porn star arrested after man dies during 'mystical' toad venom ritual",
+      "synopsis": "Spanish porn star Nacho Vidal is under investigation for manslaughter, after a man died during a ceremony involving toad venom.",
+      "url": "https://www.cnn.com/2020/06/05/europe/spain-porn-star-arrest-toad-scli-intl/index.html",
+      "date": "2020-06-01T19:07:08.594Z",
+      "id": 2
+    },
+    {
+      "title": "test",
+      "synopsis": "test",
+      "url": "testererere",
+      "date": "2020-06-09T19:47:35.169Z",
+      "id": 3
+    },
+    {
+      "title": "gafadga",
+      "synopsis": "agraegeag",
+      "url": "33g3g3gg3g",
+      "date": "2020-06-09T19:47:35.169Z",
+      "id": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "userId": 3,
+      "taskName": "Take out garbage",
+      "complete": false,
+      "completedDate": ""
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Pats Birthday",
+      "date": "2020/07/01",
+      "location": "Pats Cribbb",
+      "userId": 2,
+      "description": "Come one come all, open bar, lets get weird."
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "message": "come over, trick.",
+      "userId": 3,
+      "time": "2020/06/08 at 10:39:05"
+    }
+  ]
 }
