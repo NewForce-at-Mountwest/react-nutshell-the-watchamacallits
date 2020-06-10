@@ -3,6 +3,7 @@ import { Route, withRouter, Redirect } from "react-router-dom";
 import Home from "./home/Home";
 import NewsList from "./news/NewsList";
 import NewsForm from "./news/NewsForm";
+import NewsEditForm from "./news/NewsEditForm";
 
 
 class ApplicationViews extends Component {
@@ -19,8 +20,12 @@ class ApplicationViews extends Component {
                 }}
                 />
                 <Route exact path="/news/new" render={(props) => {
-                    return <NewsForm {...props}/>;
+                    return <NewsForm {...props} />;
                 }}
+                />
+                <Route path="/news/:newId(\d+)/edit" render={props => {
+                        return <NewsEditForm {...props}/>
+                    }}
                 />
             </>
         )

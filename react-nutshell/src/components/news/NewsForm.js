@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NewsManager from "../../modules/NewsManager"
-
+import "./NewsForm.css"
 
 
 class NewsForm extends Component {
@@ -10,6 +10,7 @@ class NewsForm extends Component {
         synopsis: "",
         url: "",
         date: new Date(),
+        userId: 1,
         loadingStatus: false,
     };
 
@@ -34,11 +35,10 @@ class NewsForm extends Component {
 
             NewsManager.post(article).then(() => this.props.history.push("/news"))
         }
-    }
+    };
 
 
     render() {
-        console.log(this.state.date)
         return(
             <>
             <form>

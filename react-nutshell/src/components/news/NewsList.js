@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NewsCard from './NewsCard'
 import NewsManager from '../../modules/NewsManager'
+import "./NewsList.css"
 
 
 class NewsList extends Component {
@@ -8,6 +9,18 @@ class NewsList extends Component {
     state = {
         articles: [],
     }
+
+    deleteArticle = id => {
+        NewsManager.delete(id)
+        .then(() => {
+          NewsManager.getAll()
+          .then((newArticles) => {
+            this.setState({
+                articles: newArticles
+            })
+          })
+        })
+      }
 
     componentDidMount() {
         NewsManager.getAll().then((parsedArticles) => {
@@ -31,8 +44,8 @@ class NewsList extends Component {
                 </section>
 
                 <div className="cards-container">
-                    {this.state.articles.sort((a, b) => { return new Date(a.date) - new Date(b.date) }).map((singleArticle) => {
-                        return <NewsCard key={singleArticle.id} news={singleArticle} />
+                    {this.state.articles.sort((a, b) => { return new Date(b.date) - new Date(a.date) }).map((singleArticle) => {
+                        return <NewsCard key={singleArticle.id} news={singleArticle} removeArticle={this.deleteArticle} {...this.props}/>
                     })}
                 </div>
             </>
