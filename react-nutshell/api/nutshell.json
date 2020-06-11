@@ -32,40 +32,102 @@
   "tasks": [
     {
       "id": 1,
-      "taskName": "thanks barry",
-      "completedDate": "2020/09/69 69 69",
-      "complete": true,
-      "userId": 1
-    },
-    {
-      "id": 2,
-      "taskName": "Wash yo' teeth",
-      "completedDate": "2020/06/09",
+      "userId": 3,
+      "taskName": "Take out garbage",
       "complete": false,
-      "userId": 1
-    },
-    {
-      "id": 3,
-      "userId": 1,
-      "taskName": "Clean your damn room.",
-      "complete": false,
-      "completedDate": "2020/11/22"
-    },
-    {
-      "taskName": "Comb Barry's Hair",
-      "completedDate": "as soon as possibly (he likes it)",
-      "complete": true,
-      "id": 4
+      "completedDate": ""
     }
   ],
   "events": [
     {
+      "id": 4,
+      "name": "Devin's B-day Paaarrrrtay",
+      "date": "05/14/2020",
+      "time": "2:00 p.m.",
+      "location": "Devin's Cribb",
+      "description": "The PARTY of the YEAR!!",
+      "userId": 1
+    },
+    {
       "id": 1,
       "name": "Pats Birthday",
-      "date": "2020/07/01",
+      "date": "07/14/2020",
+      "time": "2:00 p.m.",
       "location": "Pats Cribbb",
+      "description": "Come one come all, open bar, lets get weird.",
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "name": "Barry's Birthday",
+      "date": "08/23/2020",
+      "time": "4:00 p.m.",
+      "location": "Barry's Cribbb",
+      "description": "If you survived Pat's B-day Party, you'll want to be here!!",
+      "userId": 3
+    },
+    {
+      "id": 3,
+      "name": "Devin's B-day Paaarrrrtay",
+      "date": "09/14/2020",
+      "time": "10:00 p.m.",
+      "location": "Devin's Cribb",
+      "description": "The PARTY of the YEAR!!",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "name": "New Event",
+      "date": "05/01/2020",
+      "time": "2:00 p.m.",
+      "location": "Somewhere",
+      "description": "Testing new event",
+      "userId": 2
+    },
+    {
+      "name": "Cocktail hour after Capstones",
+      "date": "06/30/2020",
+      "time": "3:00 p.m.",
+      "location": "Remote",
+      "description": "Get together for cocktails after capstones",
       "userId": 2,
-      "description": "Come one come all, open bar, lets get weird."
+      "id": 6
+    },
+    {
+      "name": "Test Event",
+      "date": "06/11/2020",
+      "time": "10:00 p.m.",
+      "location": "Remote",
+      "description": "test for entering time ",
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "New Old Event",
+      "date": "07/01/2020",
+      "time": "12:45 p.m.",
+      "location": "Remote",
+      "description": "Testing new time field",
+      "userId": 2
+    },
+    {
+      "name": "Test Event",
+      "date": "06/11/2020",
+      "time": "3:00 p.m.",
+      "location": "Remote",
+      "description": "test for entering time ",
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "name": "Test Event",
+      "date": "06/12/2020",
+      "time": "4:00 p.m.",
+      "location": "Somewhere",
+      "description": "FRIDAY!!",
+      "userId": 2,
+      "id": 10
     }
   ],
   "messages": [

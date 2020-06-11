@@ -1,0 +1,73 @@
+.event-card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background: rgb(214, 174, 214);
+    width: 50vw;
+    padding: 5px;
+    margin-bottom: 1.5px;
+    /* height: 30vh; */
+  }
+
+h1,h3,h4,h5 {
+    text-align: center;
+    color: rgb(218, 71, 18);
+}
+
+  .card-content {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: bold;
+  }
+
+  .card-content p {
+    font-size: 80%;
+    color: darkslategrey;
+    }
+ 
+  .content-eventname {
+    color: darkslategrey;
+  }
+  
+  .event-card button {
+    background-color:  rgb(173, 116, 173);
+    border: none;
+    color:rgb(230, 61, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: .5em;
+    border-radius: 2px;
+    width: 15%;
+   
+  }
+  
+  .event-card button:hover {
+    background-color: rgb(183, 157, 230);
+  }
+
+  button {
+    align-items: center;
+    text-align: center;
+    margin-left: 40vw;
+    background-color:  rgb(173, 116, 173);
+    border: none;
+    color:rgb(230, 61, 0);
+    text-align: center;
+  }
+
+  .section-content button:hover {
+    background-color: rgb(183, 157, 230);
+  }
+
+  
+ .container-cards .event-card:first-of-type {
+    border: solid black;
+    font-weight: bolder;
+    font-size: larger;
+    width: 60vw;
+}
+   
