@@ -22,6 +22,10 @@ class NewsList extends Component {
         })
       }
 
+      injectInput = e => {
+        console.log(e)
+      }
+
     componentDidMount() {
         NewsManager.getAll().then((parsedArticles) => {
             this.setState({
@@ -43,9 +47,9 @@ class NewsList extends Component {
                     </button>
                 </section>
 
-                <div className="cards-container">
+                <div className="cards-container" >
                     {this.state.articles.sort((a, b) => { return new Date(b.date) - new Date(a.date) }).map((singleArticle) => {
-                        return <NewsCard key={singleArticle.id} news={singleArticle} removeArticle={this.deleteArticle} {...this.props}/>
+                        return <NewsCard  key={singleArticle.id} news={singleArticle} removeArticle={this.deleteArticle} {...this.props}/>
                     })}
                 </div>
             </>
