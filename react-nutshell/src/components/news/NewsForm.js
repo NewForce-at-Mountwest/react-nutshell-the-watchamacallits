@@ -30,7 +30,8 @@ class NewsForm extends Component {
                 title: this.state.title,
                 synopsis: this.state.synopsis,
                 url: this.state.url,
-                date: this.state.date
+                date: this.state.date,
+                userId: this.state.userId
             }
 
             NewsManager.post(article).then(() => this.props.history.push("/news"))
