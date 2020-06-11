@@ -4,6 +4,9 @@ import Home from "./home/Home";
 import TaskList from './tasks/TaskList'
 import TaskForm from './tasks/TaskForm'
 import TaskEditForm from "./tasks/TaskEditForm";
+import NewsList from "./news/NewsList";
+import NewsForm from "./news/NewsForm";
+import NewsEditForm from "./news/NewsEditForm";
 import EventEditForm from './events/EventEditForm'
 import EventList from "./events/EventList"
 import EventForm from './events/EventForm'
@@ -32,6 +35,18 @@ class ApplicationViews extends Component {
                     path="/tasks/:taskId(\d+)/edit" render={props => {
                         return <TaskEditForm {...props} />
                     }} />
+                <Route exact path="/news" render={(props) => {
+                    return <NewsList {...props} />;
+                }}
+                />
+                <Route exact path="/news/new" render={(props) => {
+                    return <NewsForm {...props} />;
+                }}
+                />
+                <Route path="/news/:newId(\d+)/edit" render={props => {
+                        return <NewsEditForm {...props}/>
+                }}        
+                />
                 <Route exact path="/events"
                     render={(props) => {
                         return <EventList {...props} />
