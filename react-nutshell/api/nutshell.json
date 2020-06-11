@@ -36,6 +36,13 @@
       "taskName": "Take out garbage",
       "complete": false,
       "completedDate": ""
+    },
+    {
+      "taskName": "Wash yo' balls",
+      "completedDate": "Thursday",
+      "complete": true,
+      "userId": 1,
+      "id": 2
     }
   ],
   "events": [
