@@ -4,6 +4,9 @@ import Home from "./home/Home";
 import NewsList from "./news/NewsList";
 import NewsForm from "./news/NewsForm";
 import NewsEditForm from "./news/NewsEditForm";
+import EventEditForm from './events/EventEditForm'
+import EventList from "./events/EventList"
+import EventForm from './events/EventForm'
 
 
 class ApplicationViews extends Component {
@@ -25,6 +28,21 @@ class ApplicationViews extends Component {
                 />
                 <Route path="/news/:newId(\d+)/edit" render={props => {
                         return <NewsEditForm {...props}/>
+                }}        
+                />
+                <Route exact path="/events"
+                    render={(props) => {
+                        return <EventList {...props} />
+                    }} />
+
+                <Route path="/events/new" render={(props) => {
+                    return <EventForm {...props} />
+                }} />
+
+                <Route
+                exact path="/events/:eventId(\d+)/edit"
+                    render={props => {
+                        return <EventEditForm {...props} />
                     }}
                 />
             </>
