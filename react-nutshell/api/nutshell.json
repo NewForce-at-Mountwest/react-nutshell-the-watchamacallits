@@ -1,63 +1,79 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "email": "barry@email.com",
-            "username": "barry",
-            "password": "abc123"
-        },
-        {
-            "id": 2,
-            "email": "pat@email.com",
-            "username": "pat",
-            "password": "abc123"
-        },
-        {
-            "id": 3,
-            "email": "devin@email.com",
-            "username": "devin",
-            "password": "abc123"
-        }
-    ],
-    "articles": [
-        {
-            "id": 1,
-            "userId": 2,
-            "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
-            "title": "Wormholes Allow Information to Escape Black Holes",
-            "synopsis": "Check out this recent discovery about workholes",
-            "date": "2020/06/08"
-        }
-    ],
-
-    "tasks": [
-        {
-            "id": 1,
-            "userId": 3,
-            "taskName": "Take out garbage",
-            "complete": false,
-            "completedDate": ""
-            
-        }
-    ],
-
-"events": [
+  "users": [
     {
-"id": 1,
-"name": "Pats Birthday",
-"date": "2020/07/01",
-"location": "Pats Cribbb",
-"userId": 2,
-"description": "Come one come all, open bar, lets get weird."
-    }
-],
-
-"messages": [
+      "id": 1,
+      "email": "barry@email.com",
+      "username": "barry",
+      "password": "abc123"
+    },
     {
-        "id": 1,
-        "message": "come over, trick.",
-        "userId": 3,
-        "time": "2020/06/08 at 10:39:05"
+      "id": 2,
+      "email": "pat@email.com",
+      "username": "pat",
+      "password": "abc123"
+    },
+    {
+      "id": 3,
+      "email": "devin@email.com",
+      "username": "devin",
+      "password": "abc123"
     }
-]
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "userId": 2,
+      "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
+      "title": "Wormholes Allow Information to Escape Black Holes",
+      "synopsis": "Check out this recent discovery about workholes",
+      "date": "2020/06/08"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "taskName": "thanks barry",
+      "completedDate": "2020/09/69 69 69",
+      "complete": true,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "taskName": "Wash yo' teeth",
+      "completedDate": "2020/06/09",
+      "complete": false,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "taskName": "Clean your damn room.",
+      "complete": false,
+      "completedDate": "2020/11/22"
+    },
+    {
+      "taskName": "Comb Barry's Hair",
+      "completedDate": "as soon as possibly (he likes it)",
+      "complete": true,
+      "id": 4
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Pats Birthday",
+      "date": "2020/07/01",
+      "location": "Pats Cribbb",
+      "userId": 2,
+      "description": "Come one come all, open bar, lets get weird."
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "message": "come over, trick.",
+      "userId": 3,
+      "time": "2020/06/08 at 10:39:05"
+    }
+  ]
 }

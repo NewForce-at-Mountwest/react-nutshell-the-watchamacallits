@@ -1,0 +1,20 @@
+.card {
+    text-align: center;
+   background-color: rgba(39, 39, 63);
+   color: orangered;
+   width: 30vw;
+   height: 55vh;
+   padding: 0.5em;
+   border-radius: 1em;
+   border: solid orangered;
+   margin: 1em;
+}
+
+#new-task {
+    width: 7em;
+    height: 3em;
+    background-color: rgba(39, 39, 63);
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-style: inherit;
+}
