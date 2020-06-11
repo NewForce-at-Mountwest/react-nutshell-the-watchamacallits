@@ -32,10 +32,24 @@
   "tasks": [
     {
       "id": 1,
-      "userId": 3,
-      "taskName": "Take out garbage",
+      "taskName": "Pat my head and rub my belly",
+      "completedDate": "",
       "complete": false,
-      "completedDate": ""
+      "userId": 1
+    },
+    {
+      "taskName": "Wash yo' balls",
+      "completedDate": "Thursday",
+      "complete": true,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "taskName": "Fabreez my shoes",
+      "completedDate": "Everyday",
+      "complete": true,
+      "userId": 1,
+      "id": 3
     }
   ],
   "events": [

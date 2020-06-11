@@ -7,3 +7,20 @@ h1,h3,h4 {
     color: orangered;
 
 }
+
+
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+.task-response {
+    color: aliceblue;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
