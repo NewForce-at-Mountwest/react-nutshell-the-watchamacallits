@@ -4,13 +4,13 @@ export default {
     get(id) {
         return fetch(`${remoteURL}/tasks/${id}`).then(result => result.json())
     },
-    getAll() {
-        return fetch(`${remoteURL}/tasks`).then(result => result.json())
+    getAll(userId) {
+        return fetch(`${remoteURL}/tasks?userId=${userId}`).then(result => result.json())
     },
     // checks for complete tasks
     // i ended up writing an "if" statement, so i dont need this but still have it if i want to switch it up
-    filterGetAll() {
-        return fetch(`${remoteURL}/tasks?complete=false`).then(result => result.json())
+    filterGetAll(userId) {
+        return fetch(`${remoteURL}/tasks?complete=false&userId=${userId}`).then(result => result.json())
     },
 
     //   patch for complete task checkmark

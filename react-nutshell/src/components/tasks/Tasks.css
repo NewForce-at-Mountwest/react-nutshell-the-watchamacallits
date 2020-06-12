@@ -1,4 +1,4 @@
-.card {
+.task-card {
     text-align: center;
    background-color: rgba(39, 39, 63);
    color: orangered;
@@ -17,4 +17,15 @@
     color: rgb(255, 255, 255);
     font-size: large;
     font-style: inherit;
+}
+
+.task-container-cards {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.old-task-card {
+    display: flex;
+    justify-content: center;
 }

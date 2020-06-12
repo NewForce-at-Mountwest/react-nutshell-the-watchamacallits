@@ -10,7 +10,7 @@ class NewsEditForm extends Component {
         synopsis: "",
         url: "",
         date: new Date(),
-        userId: 1,
+        userId: null,
         loadingStatus: true,
     };
 
@@ -29,7 +29,7 @@ class NewsEditForm extends Component {
             synopsis: this.state.synopsis,
             url: this.state.url,
             date: this.state.date,
-            userId: this.state.userId,
+            userId: JSON.parse(localStorage.getItem("credentials")).userId,
         };
 
         NewsManager.update(editedArticle).then(() =>
