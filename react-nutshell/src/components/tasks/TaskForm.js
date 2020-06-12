@@ -8,7 +8,7 @@ class TaskForm extends Component {
         completedDate: "",
         complete: false,
         loadingStatus: false,
-        userId:1
+        userId: null
     };
 
     handleFieldChange = evt => {
@@ -29,7 +29,7 @@ class TaskForm extends Component {
                 taskName: this.state.taskName,
                 completedDate: this.state.completedDate,
                 complete: this.state.complete,
-                userId: this.state.userId
+                userId: JSON.parse(localStorage.getItem("credentials")).userId
             };
 
             // Create the task and redirect user to task list

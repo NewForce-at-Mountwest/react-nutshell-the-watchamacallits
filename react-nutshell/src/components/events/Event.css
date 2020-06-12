@@ -64,10 +64,14 @@ h1,h3,h4,h5 {
   }
 
   
- .container-cards .event-card:first-of-type {
-    border: solid black;
-    font-weight: bolder;
-    font-size: larger;
-    width: 60vw;
+.container-cards .event-card:first-of-type {
+  border: solid black;
+  font-weight: bolder;
+  font-size: larger;
+  width: 55vw;
+  box-shadow: 10px 10px 5px rgb(53, 51, 51);
+  color:rgb(240, 66, 2);
 }
+
+
    

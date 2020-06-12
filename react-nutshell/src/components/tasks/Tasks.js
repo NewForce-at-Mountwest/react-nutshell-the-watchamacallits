@@ -4,8 +4,8 @@ import './Tasks.css'
 class TaskCard extends Component {
   render() {
     return (
-      <div className="card">
-        <div className="card-content">
+      <div className="task-card">
+        <div className="task-card-content">
 
           <h2 ><u>Task </u></h2>
           <a className="task-response"  onClick={() => { this.props.history.push(`/tasks/${this.props.taskProp.id}/edit`) }}>{this.props.taskProp.taskName}</a>

@@ -1,9 +1,17 @@
-.card {
+.news-card {
     border: 0.5em solid black;
     width: 20vw;
     margin: 2em;
 }
 
-.cards-container {
+.news-cards-container {
     display: flex;
+}
+
+.btn-container{
+    margin-left: 0;
+}
+
+.news-btn{
+    margin-left: 0;
 }

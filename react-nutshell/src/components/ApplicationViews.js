@@ -10,21 +10,36 @@ import NewsEditForm from "./news/NewsEditForm";
 import EventEditForm from './events/EventEditForm'
 import EventList from "./events/EventList"
 import EventForm from './events/EventForm'
+import Login from "./auth/Login";
+import Register from "./auth/Register";
 
 
 class ApplicationViews extends Component {
+
+    isAuthenticated = () => localStorage.getItem("credentials") !== null;
 
     render() {
         return (
 
             <>
                 <Route exact path="/" render={(props) => {
-                    return <Home />;
+                    if (this.isAuthenticated()) {
+                        return <Home />;
+                      } else {
+                        return <Redirect to="/login" />;
+                      }
+                    
+                   
                 }}
                 />
 
                 <Route exact path="/tasks" render={(props) => {
-                    return <TaskList {...props} />
+                    if (this.isAuthenticated()) {
+                        return <TaskList {...props} />
+                      } else {
+                        return <Redirect to="/login" />;
+                      }
+                    
                 }} />
 
                 <Route exact path="/tasks/new" render={(props) => {
@@ -36,7 +51,12 @@ class ApplicationViews extends Component {
                         return <TaskEditForm {...props} />
                     }} />
                 <Route exact path="/news" render={(props) => {
-                    return <NewsList {...props} />;
+                      if (this.isAuthenticated()) {
+                        return <NewsList {...props} />;
+                      } else {
+                        return <Redirect to="/login" />;
+                      }
+                    
                 }}
                 />
                 <Route exact path="/news/new" render={(props) => {
@@ -44,12 +64,17 @@ class ApplicationViews extends Component {
                 }}
                 />
                 <Route path="/news/:newId(\d+)/edit" render={props => {
-                        return <NewsEditForm {...props}/>
-                }}        
+                    return <NewsEditForm {...props} />
+                }}
                 />
                 <Route exact path="/events"
                     render={(props) => {
-                        return <EventList {...props} />
+                        if (this.isAuthenticated()) {
+                            return <EventList {...props} />
+                          } else {
+                            return <Redirect to="/login" />;
+                          }
+                        
                     }} />
 
                 <Route path="/events/new" render={(props) => {
@@ -62,6 +87,13 @@ class ApplicationViews extends Component {
                         return <EventEditForm {...props} />
                     }}
                 />
+
+                <Route path="/login" component={Login}  />
+
+                <Route path="/register" component={Register}  />
+
+
+
             </>
         )
     }

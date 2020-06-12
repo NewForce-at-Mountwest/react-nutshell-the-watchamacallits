@@ -6,9 +6,9 @@ const EventManager = {
     .then(result => result.json())
   },
 
-  getAll() {
+  getAll(userId) {
     //refactor this fetch call to ask for animals that match the logged in users id
-    return fetch(`${remoteURL}/events`)
+    return fetch(`${remoteURL}/events?userId=${userId}`)
     .then(result => result.json())
   },
 

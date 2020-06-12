@@ -13,7 +13,7 @@ class EventList extends Component {
     componentDidMount() {
         console.log("EVENT LIST: ComponentDidMount");
         //getAll from EventManager and hang on to that data; put it in state
-        EventManager.getAll()
+        EventManager.getAll(JSON.parse(localStorage.getItem("credentials")).userId)
             .then((events) => {
                 console.log(events)
                 

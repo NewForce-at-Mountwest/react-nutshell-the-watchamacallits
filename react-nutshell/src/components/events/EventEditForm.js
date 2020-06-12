@@ -10,7 +10,7 @@ class EventEditForm extends Component {
         eventTime: "",
         eventLocation: "",
         eventDescription: "",
-        eventUserId: "",
+        eventUserId: null,
         loadingStatus: true,
     };
 
@@ -34,7 +34,7 @@ class EventEditForm extends Component {
             time: this.state.eventTime,
             location: this.state.eventLocation,
             description: this.state.eventDescription,
-            userId: this.unchangedElements.eventUserId
+            userId: JSON.parse(localStorage.getItem("credentials")).userId
           
         };
 

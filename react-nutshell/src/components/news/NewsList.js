@@ -39,15 +39,15 @@ class NewsList extends Component {
         return (
             //Prints each article ordered by date
             <>
-                <section className="section-content">
-                    <button type="button"
+                <section className="news-section-content">
+                    <button className="news-btn" type="button"
                         className="btn"
                         onClick={() => { this.props.history.push("/news/new") }}>
                         New Article
                     </button>
                 </section>
 
-                <div className="cards-container" >
+                <div className="news-cards-container" >
                     {this.state.articles.sort((a, b) => { return new Date(b.date) - new Date(a.date) }).map((singleArticle) => {
                         return <NewsCard  key={singleArticle.id} news={singleArticle} removeArticle={this.deleteArticle} {...this.props}/>
                     })}

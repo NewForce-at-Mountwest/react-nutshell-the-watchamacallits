@@ -6,6 +6,10 @@ import './NavBar.css'
 
 class NavBar extends Component {
 
+  isAuthenticated = () => localStorage.getItem("credentials") !== null;
+
+clearStorage = () => localStorage.clear();
+
     render(){
         return (
             <header>
@@ -18,6 +22,8 @@ class NavBar extends Component {
             <li><Link className="nav-link" to="/events">Events</Link></li>
             <li><Link className="nav-link" to="/news">News</Link></li>
             <li><Link className="nav-link" to="/tasks">Tasks</Link></li>
+            <li><Link className="nav-link" to="/" onClick={this.clearStorage}>Logout</Link></li>
+          
           </ul>
         </nav>
       </header>

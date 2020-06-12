@@ -17,7 +17,13 @@ class EventCard extends Component {
 
     render() {
 
-        const showEvent = this.props.event.date > this.getCurrentDate()
+        let showEvent = ''
+        const checkEventYear = this.props.event.date.substr(8)
+        if (checkEventYear >= "21") {
+            showEvent = true
+        } else {
+            showEvent = this.props.event.date >= this.getCurrentDate()
+        }
         // console.log(this.props.event.date)
         // console.log(showEvent)
         return (
@@ -25,19 +31,19 @@ class EventCard extends Component {
                 {showEvent ?
                     <article className="event-card">
                         <div className="cards-content">
-                        <div className="card-content">
-                            <h3>Event: <span className="card-eventname">{this.props.event.name}</span></h3>
-                            <h5><span className="card-eventdescription">{this.props.event.description}</span></h5>
-                            <p>Date: {this.props.event.date}</p>
-                            <p>Time: {this.props.event.time}</p>
-                            <p>Location: {this.props.event.location}</p>
-                            <Link to={`/events/${this.props.event.id}/edit`}><button>Edit</button></Link>
-                        </div>
+                            <div className="card-content">
+                                <h3>Event: <span className="card-eventname">{this.props.event.name}</span></h3>
+                                <h5><span className="card-eventdescription">{this.props.event.description}</span></h5>
+                                <p>Date: {this.props.event.date}</p>
+                                <p>Time: {this.props.event.time}</p>
+                                <p>Location: {this.props.event.location}</p>
+                                <Link to={`/events/${this.props.event.id}/edit`}><button>Edit</button></Link>
+                            </div>
                         </div>
                     </article>
                     :
                     null} </>
-           )
+        )
     }
 }
 
